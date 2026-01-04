@@ -1,0 +1,30 @@
+# Python
+ChargeSenseAI-backup.git/
+
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+*.log
+
+# Virtual environment
+venv/
+.env
+
+# macOS
+.DS_Store
+
+# PyCharm
+.idea/
+*.iml
+
+# Node / Next.js (frontend)
+node_modules/
+.next/
+out/

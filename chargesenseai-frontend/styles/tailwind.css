@@ -1,0 +1,29 @@
+/* tailwind.css or globals.css */
+
+/* Tailwind base styles (reset, typography defaults) */
+@tailwind base;
+
+/* Tailwind component classes (buttons, forms, etc.) */
+@tailwind components;
+
+/* Tailwind utility classes (flex, margin, padding, etc.) */
+@tailwind utilities;
+
+/* Optional: custom CSS */
+@layer utilities {
+  /* Example: custom toast animation */
+  @keyframes slide-in {
+    from {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  .animate-slide-in {
+    animation: slide-in 0.3s ease-out forwards;
+  }
+}
