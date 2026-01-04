@@ -21,6 +21,7 @@ jobs:
       - name: Build and push Docker image
         uses: docker/build-push-action@v5
         with:
-          context: ./chargesenseai-backend
+          context: ./chargesenseai-backend  # path to your Dockerfile directory
+          file: ./chargesenseai-backend/Dockerfile  # explicitly reference Dockerfile
           push: true
           tags: nicolajb/chargesenseai-backend:latest
